@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Lair — 시작</title>
+    <style>
+      body{font-family:system-ui,-apple-system,Segoe UI,Roboto,'Noto Sans',sans-serif;margin:0;padding:2rem;background:#f6f8fb;color:#0f172a}
+      header{max-width:900px;margin:0 auto}
+      h1{font-size:2rem;margin:0 0 .5rem}
+      p{margin:.25rem 0}
+      .card{background:#fff;padding:1rem;border-radius:8px;box-shadow:0 1px 3px rgba(2,6,23,.06)}
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="card">
+        <h1>안녕하세요 — Lair</h1>
+        <p>이 파일은 HTML로 시작하는 기본 템플릿입니다.</p>
+        <p id="time"></p>
+      </div>
+    </header>
+
+    <script>
+      const el = document.getElementById('time');
+      el.textContent = '현재 시간: ' + new Date().toLocaleString();
+    </script>
+  </body>
+</html>
