@@ -37,7 +37,7 @@
             padding: 10px 15px;
             margin-left: 5px;
             font-size: 16px;
-            -webkit-text-stroke: 1px white;
+            -webkit-text-stroke: 0.31px white;
             color: darkblue;
             border-color: #fff;
             background-color: transparent;
@@ -63,6 +63,18 @@
               ;
             }
         }
+        document.addEventListener("keydown", function(e) {
+    if (
+        e.key === "F12" ||
+        (e.ctrlKey && e.shiftKey && e.key === "I") ||
+        (e.ctrlKey && e.shiftKey && e.key === "J") ||
+        (e.ctrlKey && e.key === "U")
+    ) {
+        e.preventDefault();
+    }
+            document.addEventListener("contextmenu", function(e) {
+    e.preventDefault();
+});
     </script>
 </body>
 </html>
